@@ -1,6 +1,8 @@
 # Producent – Konsument z dynamiczną listą (C + pthread)
 
-Projekt wykonany w ramach zaliczenia przedmiotu **Programowanie systemowe i współbieżne** na **III semestrze**
+Projekt wykonany w ramach zaliczenia przedmiotu **Programowanie systemowe i współbieżne** 
+
+III Semestr Rok akademicki: 2024/2025
 
 Projekt demonstrujący użycie **wielowątkowości** w języku **C** przy użyciu biblioteki `pthread`.  
 Program implementuje synchronizację między wątkami producenta i konsumenta z użyciem dynamicznej listy, umożliwiając także dynamiczną zmianę jej rozmiaru i łączenie dwóch list.
