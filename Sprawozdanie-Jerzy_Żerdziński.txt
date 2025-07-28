@@ -6,7 +6,7 @@ Programowanie systemowe i współbieżne
 -------------------------------------
 
 
-:Author: Jerzy Żerdziński 160182 <jerzy.zerdzinski@student.put.poznan.pl>
+:Author: Jerzy Żerdziński
 :Date:   v1.0, 2025-01-26
 
 
