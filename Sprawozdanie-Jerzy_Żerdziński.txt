@@ -1,0 +1,61 @@
+===============================
+Lista o ograniczonej pojemności
+===============================
+-------------------------------------
+Programowanie systemowe i współbieżne
+-------------------------------------
+
+
+:Author: Jerzy Żerdziński 160182 <jerzy.zerdzinski@student.put.poznan.pl>
+:Date:   v1.0, 2025-01-26
+
+
+
+
+
+Struktury danych
+================
+
+
+1. Elementy listy definiowane są strukturą ``Node``::
+
+    typedef struct TList {
+	void **items;         
+        int maxSize;    
+	int nextSize;      
+        int currentSize;      
+        int first;            
+        int last;             
+        pthread_mutex_t lock; 
+        pthread_cond_t notFull;  // lista niepełna
+        pthread_cond_t notEmpty; // lista niepusta
+    };
+
+2. 
+items - Tablica wskaźników do elementów 
+
+maxSize - Maksymalny rozmiar tablicy
+
+nextSize - Rozmiar tablicy na który dokonano zmiany
+
+currentSize - Aktualny rozmiar tablicy
+
+first - Indeks pierwszego elementu 
+
+last - Indeks ostatniego elementu
+
+
+
+
+
+
+
+
+Przykład użycia
+===============
+
+gcc -o program main.c list.c -lpthread
+
+./program
+
+
